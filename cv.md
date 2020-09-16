@@ -4,7 +4,7 @@
    
 **E-mail:** Satlikov.rustma.mail@gmail.com
    
-**FB:** [facebook.com/satlykov.rustam](facebook.com/satlykov.rustam)
+**FB:** facebook.com/satlykov.rustam
 
 ***
    
