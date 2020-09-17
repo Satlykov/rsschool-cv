@@ -1,0 +1,29 @@
+html {
+    font-family: Roboto, sans-serif;
+}
+
+* {
+    color: black;
+}
+h1 {
+    color: rgba(6, 6, 104, 0.774);
+    margin-bottom: 0.2em;
+}
+h2 {
+    color: black;
+    font-size: 1em;
+    margin-top: 0:
+    margin-bottom: 1em;
+}
+a {
+    color: rgba(6, 6, 104, 0.774);
+}
+.contacts {
+    margin-bottom: 2em;
+}
+.contact {
+display: flex;
+  &__type {
+      min-width: 45px;
+  }
+}
