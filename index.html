@@ -1,63 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My CV HTML for RSSchool</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CV HTML for RSSchool</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
       .CV {
-        display: block;
-        margin: auto;
+        display: flex;
+        justify-content: center;
         max-width: 1024px;
-        border-color: #000;
-        border-width: 1px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
       }
-    </style>
-    <div class="CV">
-      <section>
-        <h1>Satlykov Rustam</h1>
-        <img
-        src="https://avatars1.githubusercontent.com/u/70792214?s=400&u=854bfb94c0e95539733e28ab66bb8929c8291bb0&v=4"
-        alt="Satlykov Rustam"
-        width="200"
-        height="200"
-        />
-        <div class="contacts">
-          <div class="contact">
-            <div class="contact__type">Tel:</div>
-            <div class="contact__Tel">
-              +998 99 815-11-23
-              <a href="https://t.me/satlykovrustam">Telegram</a>
+  
+      header {
+        text-align: center;
+      }
+  
+      footer {
+        text-align: center;
+      }
+  
+      body {
+          font-family: Oswald;
+          background-color: #121315;
+          color: #999b9a;
+      }
+  
+      h1 {
+          color: #eec219;
+      }
+
+      h4 {
+        margin: 0;
+      }
+  
+      a {
+        color: #999b9a;
+      }
+  
+      .Telegram, .contact__type, .project__type {
+          color: #eec219;
+      }
+  
+      section {
+        min-width: 300px;
+        max-width: 450px;
+        margin: 15px;
+      }
+  
+      img {
+        max-width: 350px;
+      }
+</style>
+</head>
+<body>
+      <header>
+        <h1>Rustam Satlykov</h1>
+      </header>
+      <div class="CV">
+        <section>
+          <div class="contacts">
+            <div class="contact">
+              <h4 class="contact__type">Tel:</h4>
+              <div class="contact__Tel">
+                +998 99 815-11-23
+                <a class="Telegram" href="https://t.me/rustamsatlykov">Telegram</a>
+              </div>
             </div>
-          </div>
-          <div class="contact">
-            <div class="contact__type">E-mail:</div>
-            <div class="contact__E-mail">Satlikov.rustam.mail@gmail.com</div>
-          </div>
-          <div class="contact">
-            <div class="contact__type">Facebook:</div>
-            <div class="contact__Facebook">
-              https://facebook.com/satlykov.rustam
+            <div class="contact">
+              <h4 class="contact__type">E-mail:</h4>
+              <div class="contact__E-mail"><a href="mailto:satlikov.rustam.mail@gmail.com">satlikov.rustam.mail@gmail.com</a></div>
             </div>
+            <div class="contact">
+              <h4 class="contact__type">Facebook:</h4>
+              <div class="contact__Facebook">
+                <a href="https://facebook.com/satlykov.rustam">facebook.com/satlykov.rustam</a>
+              </div>
+            <div class="contact">
+              <h4 class="contact__type">Discord:</h4>
+              <div class="contact__Discord">
+                HEDGEHOG#1998
+              </div>
+            </div>
+           </div>
+          </div>
+          <div class="description">
+            <p>
+              I'am power engineer. I work as a dispatcher in the Central Asian
+              power system. I want to develop as a specialist at the intersection
+              of energy and IT.
+            </p>
+            <p>I didn't work in IT</p>
+            <p>
+              I completed my bachelor's degree at TSTU with a degree in Electrical
+              Power Engineering.
+            </p>
+            <p>I have basic HTML, CSS and JS skills from studying at RSSchool 2020 but unfortunately I could not complete the course.</p>
+            <p>My English level is now A1.</p>
+          </div>
+          <div class="pproject">
+            <div class="project__type">My first and only project:</div>
+            <div class="project__href"><a href="https://satlykov.github.io/CDC/">Landing page for CDC "Energy"</a></div>
+          </div>
+        </section>
+
+        <section>
+          <img
+          src="SRA.jpg"
+          alt="Satlykov Rustam"
+          />
+          <h5>Rustam Satlykov</h5>
+       </section>
+      </div>
+
+      <footer>
+        <div class="contact">
+          <h4 class="contact__type">GitHub:</h4>
+          <div class="contact__GitHub">
+            <a href="https://github.com/satlykov">github.com/satlykov</a>
           </div>
         </div>
-        <div class="description">
-          <p>
-            I'am power engineer. I work as a dispatcher in the Central Asian
-            power system. I want to develop as a specialist at the intersection
-            of energy and IT.
-          </p>
-          <p>I didn't work in IT</p>
-          <p>
-            I completed my bachelor's degree at TSTU with a degree in Electrical
-            Power Engineering.
-          </p>
-          <p>My English level is now A1.</p>
+        <div class="RSS">
+          <a href="https://rs.school/js/">
+          <img
+          src="rs_school_js.png"
+          alt="RSSchool"
+          />
+        </a>
         </div>
-      </section>
-    </div>
-  </body>
-</html>
+      </footer>  
+</body>
