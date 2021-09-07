@@ -44,6 +44,14 @@
         margin: 0;
       }
 
+      article {
+        margin: 10px 0;
+      }
+
+      span {
+        margin: 10px 0;
+      }
+
       a {
         color: #999b9a;
       }
@@ -61,12 +69,18 @@
       }
 
       .code__example {
-        padding: 20px;
+        padding: 10px;
         margin: 20px 0px;
         background-color: #565756;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 11px;
         color: #eec219;
+        max-width: 100%;
+      }
+
+      .project,
+      .code {
+        margin-top: 10px;
       }
 
       section {
@@ -77,12 +91,13 @@
 
       img {
         margin-top: 20px;
-        max-width: 350px;
+        max-width: 300px;
       }
 
       figcaption {
         font-weight: 600;
-        font-size: 30px;
+        font-size: 25px;
+        text-align: center;
       }
 
       .RSS {
@@ -101,6 +116,7 @@
 
     <section>
 
+        <nav>
           <ul class="contacts">
             <li class="contact"><h4 class="contact__type">Tel: </h4><h4>+998 99 815-11-23</h4><a class="Telegram" href="https://t.me/rustamsatlykov"
               >Telegram</a
@@ -113,26 +129,28 @@
             ></li>
             <li class="contact"><h4 class="contact__type">Discord:</h4><a class="contact__Discord" href="https://discord.com/">HEDGEHOG#1998</a></li>
           </ul>
+        </nav>
+
 
         <div class="description">
-          <p>
+          <article>
             I'am power engineer. I work as a dispatcher in the Central Asian
             power system. I want to develop as a specialist at the intersection
             of energy and IT.
-          </p>
-          <p>I didn't work in IT</p>
-          <p>
+          </article>
+          <span>I didn't work in IT</span>
+          <article>
             I completed my bachelor's degree at TSTU with a degree in Electrical
             Power Engineering.
-          </p>
-          <p>
+          </article>
+          <article>
             I have basic HTML, CSS and JS skills from studying at RSSchool 2020
             but unfortunately I could not complete the course.
-          </p>
-          <p>My English level is now A1.</p>
+          </article>
+          <span>My English level is now A1.</span>
         </div>
 
-        <div class="pproject">
+        <div class="project">
           <div class="project__type">My first and only project:</div>
           <div class="project__href">
             <a href="https://satlykov.github.io/CDC/"
