@@ -16,7 +16,7 @@ I completed my bachelor's degree at TSTU with a degree in Electrical Power Engin
 
 I have basic HTML, CSS and JS skills from studying at RSSchool 2021 but unfortunately I could not complete the course.
 
-I will not give up! 
+I will not give up! I will study harder!
 
 ***
 
