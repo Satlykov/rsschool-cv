@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         max-width: 1024px;
-        align-items: center;
+        align-items: top;
         flex-wrap: wrap;
         margin: auto;
       }
@@ -50,7 +50,17 @@
 
       .Telegram,
       .contact__type,
-      .project__type {
+      .project__type,
+      .code__name {
+        color: #eec219;
+      }
+
+      .code__example {
+        padding: 20px;
+        margin: 20px 0px;
+        background-color: #565756;
+        font-weight: 700;
+        font-size: 13px;
         color: #eec219;
       }
 
@@ -61,7 +71,13 @@
       }
 
       img {
+        margin-top: 20px;
         max-width: 350px;
+      }
+
+      figcaption {
+        font-weight: 600;
+        font-size: 30px;
       }
 
       .RSS {
@@ -117,6 +133,25 @@
             <a href="https://satlykov.github.io/CDC/"
               >Landing page for CDC "Energy"</a
             >
+          </div>
+        </div>
+
+        <div class="code">
+          <div class="code__name">My code example:</div>
+          <div class="code__example">
+            <code><pre>let before = document.getElementById("before"),
+              <br>after = document.getElementById("after"),
+              <br>slider = document.getElementById("slider");
+
+              <br>function moveDivisor() {
+                <br>    after.style.left = slider.value + "%";
+                <br>    before.style.width = slider.value + "%";
+                <br>}
+
+                <br>window.onload = function () {
+                  <br>    moveDivisor();
+                <br>};
+              </pre></code>
           </div>
         </div>
 
