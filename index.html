@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My CV HTML for RSSchool</title>
         <style>
-            html {
-              scroll-behavior: smooth;
-            }
-
             @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+            html {
+                scroll-behavior: smooth;
+            }
 
             .CV {
                 display: flex;
@@ -40,7 +40,7 @@
                 align-items: center;
                 justify-content: space-between;
                 width: 30%;
-                margin: 0 auto;
+                margin: 10px auto 0;
             }
 
             body {
@@ -94,6 +94,10 @@
                 margin: 0 5px 0;
             }
 
+            .contact {
+                margin: 10px auto 0;
+            }
+
             .Telegram,
             .contact__type,
             .project__type,
@@ -133,6 +137,12 @@
             .RSS {
                 max-width: 200px;
             }
+
+            iframe {
+                width: 75%;
+                margin: 10px auto 10px;
+                border: none;
+            }
         </style>
         <link
             rel="stylesheet"
@@ -159,7 +169,7 @@
 
         <main class="CV">
             <section id="contact">
-                <h1 >Rustam Satlykov</h1>
+                <h1>Rustam Satlykov</h1>
                 <h4>Contacts:</h4>
                 <nav>
                     <ul class="contacts">
@@ -206,13 +216,14 @@
                 <div class="description" id="description">
                     <p>
                         I'am power engineer. I work as a dispatcher in the
-                        Central Asian power system. I want to develop as a
-                        specialist at the intersection of energy and IT.
+                        Central Asian power system. And now I want to develop as
+                        a specialist at the intersection of energy and IT.
                     </p>
-                    <span>I didn't work in IT</span>
+                    <span>I didn't work in IT but I really want it.</span>
                     <p>
-                        I completed my bachelor's degree at TSTU with a degree
-                        in Electrical Power Engineering.
+                        I completed my bachelor's degree at Tashkent State
+                        Technical University (TSTU) with a degree in Electrical
+                        Power Engineering.
                     </p>
                     <p>
                         I have basic HTML, CSS and JS skills from studying at
@@ -260,9 +271,20 @@ window.onload = function () {
                 <img src="SRA.jpg" alt="Rustam Satlykov" />
                 <figcaption>Rustam Satlykov</figcaption>
             </figure>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/cUmgytt1Cis?controls=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
         </main>
-
         <footer>
+            <a
+                href="https://docs.google.com/document/d/1CZMq3QRPjk6lS3fqGDIshExS8Oidzjs3FdMAiVPJwXw/edit"
+                target="_blank"
+            >Video CV transcription</a>
             <div class="contact">
                 <h4 class="contact__type">GitHub:</h4>
                 <div class="contact__GitHub">
@@ -271,7 +293,6 @@ window.onload = function () {
                     >
                 </div>
             </div>
-
             <div>
                 <a href="https://rs.school/js/" target="_blank">
                     <img class="RSS" src="rs_school_js.png" alt="RSSchool" />
@@ -279,10 +300,13 @@ window.onload = function () {
             </div>
 
             <div id="video">
-              <a href="https://www.youtube.com/" target="_blank">
-                  <img class="RSS" src="YouTube.png" alt="YouTube" />
-              </a>
-          </div>
+                <a
+                    href="https://www.youtube.com/c/RollingScopesSchool"
+                    target="_blank"
+                >
+                    <img class="RSS" src="YouTube.png" alt="YouTube" />
+                </a>
+            </div>
         </footer>
     </body>
 </html>
