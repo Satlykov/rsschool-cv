@@ -5,148 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My CV HTML for RSSchool</title>
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
-
-            html {
-                scroll-behavior: smooth;
-            }
-
-            .CV {
-                display: flex;
-                justify-content: center;
-                max-width: 1024px;
-                flex-wrap: wrap;
-                margin: 80px auto 0;
-            }
-
-            header {
-                display: flex;
-                align-items: center;
-                height: 70px;
-                width: 100%;
-                justify-content: center;
-                position: fixed;
-                top: 0;
-                background: #121315;
-                border-bottom: 2px solid;
-                border-color: #eec219;
-            }
-
-            footer {
-                display: flex;
-                text-align: center;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                width: 30%;
-                margin: 10px auto 0;
-            }
-
-            body {
-                font-family: Oswald;
-                background-color: #121315;
-                color: #999b9a;
-            }
-
-            h1 {
-                color: #eec219;
-            }
-
-            h4 {
-                margin: 0;
-            }
-
-            article {
-                margin: 10px 0;
-            }
-
-            span {
-                margin: 10px 0;
-            }
-
-            a {
-                color: #999b9a;
-                transition: 0.5s;
-            }
-
-            a:hover {
-                color: #eec219;
-            }
-
-            ul {
-                padding: 0;
-                margin: 20px;
-            }
-
-            .head-nav {
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
-                margin: 0 auto;
-            }
-
-            .li {
-                display: block;
-                width: auto;
-                margin: 0 5px 0;
-            }
-
-            .contact {
-                margin: 10px auto 0;
-            }
-
-            .Telegram,
-            .contact__type,
-            .project__type,
-            .code__name {
-                color: #eec219;
-            }
-
-            .code__example {
-                margin: 20px 0px;
-                font-weight: 700;
-                font-size: 11px;
-                max-width: 100%;
-            }
-
-            .project,
-            .code {
-                margin-top: 10px;
-            }
-
-            section {
-                min-width: 300px;
-                max-width: 450px;
-                margin: 15px;
-            }
-
-            img {
-                margin-top: 20px;
-                max-width: 300px;
-            }
-
-            figcaption {
-                font-weight: 600;
-                font-size: 25px;
-                text-align: center;
-            }
-
-            .RSS {
-                max-width: 200px;
-            }
-
-            iframe {
-                width: 75%;
-                margin: 10px auto 10px;
-                border: none;
-            }
-        </style>
+        <link rel="stylesheet" href="./style.css" />
         <link
             rel="stylesheet"
-            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/monokai-sublime.min.css"
         />
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
         <script>
@@ -251,8 +113,8 @@
                     <div class="code__example">
                         <pre><code class="js">
 let before = document.getElementById("before"),
-after = document.getElementById("after"),
-slider = document.getElementById("slider");
+    after = document.getElementById("after"),
+    slider = document.getElementById("slider");
 
 function moveDivisor() {
     after.style.left = slider.value + "%";
