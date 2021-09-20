@@ -13,6 +13,7 @@ html {
 }
 
 header {
+    position: absolute;
     display: flex;
     align-items: center;
     height: 70px;
@@ -23,6 +24,7 @@ header {
     background: #121315;
     border-bottom: 2px solid;
     border-color: #eec219;
+    z-index: 50;
 }
 
 footer {
@@ -32,6 +34,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 30%;
+    min-width: 300px;
     margin: 10px auto 0;
 }
 
@@ -72,6 +75,13 @@ ul {
 }
 
 .head-nav {
+    display: none;
+    width: 70%;
+    max-width: 700px;
+    font-size: 20px;
+}
+
+.head-ul {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -133,6 +143,96 @@ figcaption {
 
 iframe {
     width: 75%;
+    min-width: 300px;
     margin: 10px auto 10px;
     border: none;
+}
+
+label {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 25px;
+    width: 75px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 100;
+    color: #eec219;
+}
+
+.burger-line {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 70px;
+    height: 2px;
+    width: 30px;
+    background-color: #eec219;
+    transition: .5s all;
+}
+
+.second,
+.third {
+    top: 38px;
+}
+
+.fourth {
+    top: 46px;
+}
+
+.burger-menu {
+    z-index: 10;
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background: #121315;
+    border: 2px solid;
+    bottom: -5px;
+    left: 0;
+    max-height: 0px;
+    font-size: 0px;
+    border: none;
+}
+
+#check-menu {
+    display: none;
+}
+
+#check-menu:checked ~ .burger-menu{
+    max-height: 200px;
+    font-size: 20px;
+    top: 80px;
+    border: 2px solid;
+    border-color: #eec219;
+}
+
+#check-menu:checked ~ .first {
+    display: none;
+}
+
+#check-menu:checked ~ .second {
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third {
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    label {
+        display: none;
+    }
+
+    .burger-line {
+        display: none;
+    }
+
+    .head-nav {
+        display: block;
+    }
 }

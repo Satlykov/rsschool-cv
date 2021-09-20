@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My CV HTML for RSSchool</title>
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link
             rel="stylesheet"
             href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/monokai-sublime.min.css"
@@ -18,8 +18,23 @@
 
     <body>
         <header>
-            <nav>
-                <ul class="head-nav">
+            <nav class="head-nav">
+                <ul  class="head-ul">
+                    <li class="li"><a href="#contact">Contacts</a></li>
+                    <li class="li"><a href="#description">About</a></li>
+                    <li class="li"><a href="#project">Project</a></li>
+                    <li class="li"><a href="#code">Code</a></li>
+                    <li class="li"><a href="#video">Video</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" name="check-menu" id="check-menu">
+            <label for="check-menu">MENU</label>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            <nav class="burger-menu">
+                <ul>
                     <li class="li"><a href="#contact">Contacts</a></li>
                     <li class="li"><a href="#description">About</a></li>
                     <li class="li"><a href="#project">Project</a></li>
@@ -106,6 +121,21 @@
                             <img src="./cdc.png" alt="CDC landing page" />
                         </a>
                     </div>
+                    <div class="project__about">
+                        <p>
+                            Small landing page for CDC Energy. It contains basic information 
+                            about the organization and what it does. There are contacts of 
+                            the organization. There is a location of the organization on 
+                            the map. There is a brief history of the organization.
+                            The site is semantic.
+                        </p>
+                        <h4>Technologies:</h4>
+                        <ol>
+                            <li>CSS3</li>
+                            <li>HTML5</li>
+                            <li>JavaScript</li>
+                        </ol>
+                    </div>
                 </div>
 
                 <div class="code" id="code">
@@ -149,7 +179,7 @@ window.onload = function () {
                 target="_blank"
             >Video CV transcription</a>
             <div class="contact">
-                <h4 class="contact__type">GitHub:</h4>
+                <h3 class="contact__type">GitHub:</h3>
                 <div class="contact__GitHub">
                     <a href="https://github.com/satlykov" target="_blank"
                         >github.com/satlykov</a
